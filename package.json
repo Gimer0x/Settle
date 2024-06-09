@@ -1,0 +1,23 @@
+{
+  "name": "settlenet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:local": "npx hardhat test --network localhost",
+    "start:local": "npx hardhat node",
+    "deploy:local": "npx hardhat ignition deploy ./ignition/modules/Deploy.js --network localhost",
+    "deploy:sepolia": "npx hardhat ignition deploy ./ignition/modules/Deploy.js --network sepolia --verify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.5"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.2",
+    "dotenv": "^16.4.5"
+  }
+}
